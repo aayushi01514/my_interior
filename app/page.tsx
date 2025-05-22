@@ -22,7 +22,7 @@ export default function Home() {
           title={"Ensuring a safe experience from design to installation"}
           description={"We're following all protocols to ensure your safety and vaccination drives are underway to ensure our employees are ready to meet you safely."}
           linkname={"Know More"}
-          linksrc={"/"}
+          linksrc={"/contactus/"}
           imgsrc={"/P1.jpg"}
           imgalt={"abc"}
         />        
