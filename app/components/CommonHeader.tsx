@@ -10,7 +10,7 @@ const CommonHeader: React.FC<CommonHeaderProps> = ({ title, imgsrc }) => {
     return (
         <header
             className="relative w-full h-fit bg-slate-900 bg-cover bg-center"
-            style={{ backgroundImage: `url(/${imgsrc})` }}
+            style={{ backgroundImage: `url(${imgsrc})` }}
         >
             <div className="bg-black bg-opacity-50 py-28">
                 <TextGenerateEffect
