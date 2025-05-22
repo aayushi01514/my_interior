@@ -77,8 +77,8 @@ export async function PUT(
 
     if (variations && variations.length > 0) {
       for (const variation of variations) {
-        const { image, price, buttonLabel, buttonLink } = variation;
-        if (!image || !price || !buttonLabel || !buttonLink) {
+        const { image, price, variationtitle } = variation;
+        if (!image || !price || !variationtitle ) {
           return NextResponse.json(
             { error: 'Variation missing required fields' },
             { status: 400 }

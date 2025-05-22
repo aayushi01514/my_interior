@@ -21,7 +21,6 @@ export async function POST(req: NextRequest) {
       description,
       frontimg,
       frontimgalt,
-      // images,
       style,
       location,
       budget,
@@ -34,8 +33,8 @@ export async function POST(req: NextRequest) {
 
     if (variations && variations.length > 0) {
       for (const variation of variations) {
-        const { image, price, buttonLabel, buttonLink } = variation;
-        if (!image || !price || !buttonLabel || !buttonLink) {
+        const { image, price, variationtitle } = variation;
+        if (!image || !price || !variationtitle) {
           return NextResponse.json(
             { error: 'Variation missing required fields' },
             { status: 400 }
@@ -56,7 +55,6 @@ export async function POST(req: NextRequest) {
       description,
       frontimg,
       frontimgalt,
-      // images,
       style,
       location,
       budget,
