@@ -201,6 +201,7 @@ export const workExperience = [
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
+  
   {
     id: 4,
     title: "Lead Frontend Developer",
