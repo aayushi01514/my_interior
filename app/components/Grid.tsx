@@ -8,93 +8,93 @@ export function HeroParallaxDemo() {
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    link: "#",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/0107.jpg",
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "#",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "/0102.webp",
   },
   {
     title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:"/P1.jpg",
+    link: "#",
+    thumbnail:"/0103.webp",
   },
 
   {
     title: "Editorially",
-    link: "https://editorially.org",
+    link: "#",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      "/0104.webp",
   },
   {
     title: "Editrix AI",
-    link: "https://editrix.ai",
+    link: "#",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/0105.webp",
   },
   {
     title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    link: "#",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/0106.webp",
   },
 
   {
     title: "Algochurn",
-    link: "https://algochurn.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
   },
   {
     title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
   },
   {
     title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
   },
   {
     title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
   },
   {
     title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
   },
 
   {
     title: "Creme Digital",
-    link: "https://cremedigital.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
   },
   {
     title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
   },
   {
     title: "Invoker Labs",
-    link: "https://invoker.lol",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/invoker.png",
   },
   {
     title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    link: "#",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },

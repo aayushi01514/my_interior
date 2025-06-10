@@ -150,3 +150,7 @@ body {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+.input {
+  @apply w-full border px-2 py-1 rounded outline-none;
+}
