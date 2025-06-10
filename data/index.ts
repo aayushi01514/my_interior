@@ -3,7 +3,7 @@ import { img } from "motion/react-client";
 
 export const navItems = [
   { name: "HOME", link: "/" },
-  { name: "DESIGN IDEAS", link: "/products/" },
+  { name: "DESIGN IDEA", link: "/products/" },
   { name: "ABOUT US", link: "/about/" },
   { name: "CONTACT US", link: "/contactus/" },
 ];
