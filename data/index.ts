@@ -1,21 +1,11 @@
 import { link } from "fs";
 import { img } from "motion/react-client";
-export const products = [
-  { slug: "livingrooms", name: "Living Room", link: "/", img: "/01.jpg", imgalt: 'abc' },
-  { name: "Bedroom", link: "/products", img: "/02.jpg", imgalt: 'abc' },
-  { name: "Kitchen", link: "/products", img: "/01.jpg", imgalt: 'abc' },
-  { name: "Bathroom", link: "/products", img: "/02.jpg", imgalt: 'abc' },
-  { name: "Dining Room", link: "/products", img: "/01.jpg", imgalt: 'abc' },
-  { name: "Home Office", link: "/products", img: "/02.jpg", imgalt: 'abc' },
-  { name: "Outdoor Space", link: "/products", img: "/01.jpg", imgalt: 'abc' },
-  { name: "Entryway", link: "/products", img: "/02.jpg", imgalt: 'abc' },
-]
 
 export const navItems = [
-  { name: "HOME", link: "#home" },
-  { name: "DESIGN IDEAS", link: "/products" },
-  { name: "ABOUT US", link: "#about" },
-  { name: "CONTACT US", link: "/contactus" },
+  { name: "HOME", link: "/" },
+  { name: "DESIGN IDEAS", link: "/products/" },
+  { name: "ABOUT US", link: "/about/" },
+  { name: "CONTACT US", link: "/contactus/" },
 ];
 export const footers = [
   {
