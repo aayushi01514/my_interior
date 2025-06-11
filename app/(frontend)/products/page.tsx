@@ -133,11 +133,16 @@ interface Project {
 
 const Page = () => {
   const [projects, setProjects] = useState<Project[]>([]);
-
   useEffect(() => {
     fetch("/api/design-project")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch");
+        return res.json();
+      })
+      .then((data) => setProjects(data))
+      .catch((err) => {
+        console.error("Fetch error:", err);
+      });
   }, []);
 
   return (

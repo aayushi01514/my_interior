@@ -5,9 +5,14 @@ import { NextRequest, NextResponse } from 'next/server';
 import slugify from 'slugify';
 
 export async function GET() {
-  await connectDB();
-  const projects = await DesignProject.find().sort({ createdAt: -1 });
-  return NextResponse.json(projects);
+  try {
+    await connectDB();
+    const projects = await DesignProject.find({});
+    return NextResponse.json(projects); // ✅ this must return valid JSON
+  } catch (error) {
+    console.error("API Error:", error);
+    return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
+  }
 }
 
 export async function POST(req: NextRequest) {
