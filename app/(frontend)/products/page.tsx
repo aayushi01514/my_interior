@@ -170,7 +170,7 @@ const Page = () => {
                 key={index}
                 className="w-full max-w-[400px] bg-white text-center shadow-xl rounded-xl hover:scale-105 transition-transform duration-300"
               >
-                <Link href={`/products/${product.slug}`}>
+                <Link href={`/products/${product.slug}/`}>
                   <img
                     src={typeof product.frontimg === "string" ? product.frontimg : ""}
                     alt={product.frontimgalt}
