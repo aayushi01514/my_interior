@@ -7,24 +7,10 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       {/* Hero Section */}
-      <div className="relative h-[60vh] w-full">
-        <Image
-          src="/02.jpg"
-          alt="About 8R Studio"
-          layout="fill"
-          objectFit="cover"
-          className="brightness-75"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-4xl md:text-6xl font-bold">About 8R Studio</h1>
-        </div>
-      </div>
        <CommonHeader
-        title="READY TO TAKE A TOUR OF OUR EXPERIENCE CENTRE?"
+        title="Who We Are: The Creative Minds of 8R Studio"
         imgsrc="01.jpg"
       />
-      
-
       {/* Story Section */}
       <section className="container mx-auto px-6 py-12 text-center md:text-left">
         <h2 className="text-3xl font-bold mb-4">Our Story</h2>
@@ -94,15 +80,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      {/* Call To Action */}
-      {/* <section className="bg-black text-white text-center py-16 px-6">
-        <h2 className="text-3xl font-bold mb-4">Ready to Design Your Dream Home?</h2>
-        <p className="mb-6 text-lg">Let Interia bring your vision to life with beautiful and functional interiors.</p>
-        <a href="/contact" className="inline-block bg-white text-black px-6 py-3 rounded-full hover:bg-gray-200 transition">
-          Contact Us
-        </a>
-      </section> */}
     </div>
   );
 };
