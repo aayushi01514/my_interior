@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import AlertBox from '@/app/components/AlertBox';
 import ConfirmAlert from '@/app/components/ConfirmAlert';
 import LoaderSpinner from '@/app/components/ui/LoaderSpinner';
 
@@ -117,21 +116,6 @@ const Page = () => {
                       className='bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600'>
                       Delete
                     </button>
-                    <AlertBox
-                      show={showAlert}
-                      type="confirm"
-                      message="Are you sure you want to delete this product?"
-                      onClose={() => setShowAlert(false)}
-                      onConfirm={() => handleDelete(p._id)}
-                    />
-
-                    {/* <AlertBox
-                  show={showUpdateSuccess}
-                  type="success"
-                  message="Product updated successfully!"
-                  onClose={() => setShowUpdateSuccess(false)}
-                /> */}
-
                     <ConfirmAlert
                       show={showDelete}
                       onClose={() => setShowDelete(false)}
