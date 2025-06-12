@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import './globals.css';
 import NavWrapper from "./components/NavWrapper";
 import FooterWrapper from "./components/FooterWrapper";
+import TopProgressBar from "./components/TopProgressBar";
 
 const geistSans = Inter({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <TopProgressBar />
         <NavWrapper />
         <main>{children}</main>
         <FooterWrapper />
@@ -39,19 +41,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// import './globals.css';
-// import NavWrapper from "./components/NavWrapper";
-// import FooterWrapper from "./components/FooterWrapper";
-
-// export default function RootLayout({ children }: { children: React.ReactNode }) {
-//   return (
-//     <html lang="en">
-//       <body>
-//         <NavWrapper />
-//         <main>{children}</main>
-//         <FooterWrapper />
-//       </body>
-//     </html>
-//   );
-// }
