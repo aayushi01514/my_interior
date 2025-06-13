@@ -74,15 +74,14 @@ const Page = () => {
               ))}
             </div>
           )}
-
           {/* Example Button Hover Box */}
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <div className="outer">
               <div className="buttonhover">
                 <div className="text">button</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <HeroSection
           title="Ensuring a safe experience from design to installation"

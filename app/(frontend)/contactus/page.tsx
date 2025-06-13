@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import CommonHeader from '@/app/components/CommonHeader'
 import VisitProducts from '@/app/components/VisitProducts'
 import HeroSection from '@/app/components/HeroSection'
+import toast, { Toaster } from 'react-hot-toast';
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -17,37 +18,6 @@ const page = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   setStatus('Submitting...');
-
-  //   try {
-  //     const res = await fetch('/api/users', {
-  //       method: 'POST',
-  //       headers: { 'Content-Type': 'application/json' },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     const data = await res.json();
-
-  //     if (res.ok) {
-  //       setStatus('✅ Submitted successfully!');
-  //       setFormData({
-  //         name: '',
-  //         email: '',
-
-  //         address: '',
-  //         mobileNo: '',
-  //         message: '',
-  //       });
-  //     } else {
-  //       setStatus(`❌ ${data.error}`);
-  //     }
-  //   } catch (err) {
-  //     setStatus('❌ Submission failed.');
-  //   }
-  // };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('');
@@ -61,6 +31,8 @@ const page = () => {
     const data = await res.json();
     setStatus(data.message || data.error);
     if (res.ok) setFormData({ name: '', email: '', address: '', mobileNo: '', message: '' });
+    toast.success('Project saved!');
+
   };
 
   return (
@@ -69,6 +41,8 @@ const page = () => {
         title="Start Your Interior Design Journey With 8R Studio Today!"
         imgsrc="01.jpg"
       />
+
+      <Toaster />
 
       <div className="container mx-auto px-4 py-10">
         <div className="text-center max-w-4xl mx-auto">

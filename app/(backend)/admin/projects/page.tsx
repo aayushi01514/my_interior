@@ -43,9 +43,9 @@ const Page = () => {
   }, []);
 
   const handleDelete = async (id: string) => {
-    const confirmDelete = window.confirm('Are you sure you want to delete this project?');
+    // const confirmDelete = window.confirm('Are you sure you want to delete this project?');
 
-    if (!confirmDelete) return;
+    // if (!confirmDelete) return;
 
     try {
       const res = await axios.delete(`/api/design-project/${id}`); // Adjust API path as needed
