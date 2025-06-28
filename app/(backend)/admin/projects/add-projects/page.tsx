@@ -17,7 +17,7 @@ export default function DesignProjectForm() {
     location: string;
     budget: number;
     slug: string;
-    variations: { image: string; price: number;variationtitle: string }[];
+    variations: { image: string; price: number; variationtitle: string }[];
   }>({
     defaultValues: {
       title: '',
@@ -119,7 +119,14 @@ export default function DesignProjectForm() {
               <img src={frontImgPreview} alt="Front Preview" className="w-24 h-24 object-cover rounded-md border" />
             </div>
           }
-          <input {...register('style')} placeholder="Style" className="w-full border p-2" />
+          {/* <input {...register('style')} placeholder="Style" className="w-full border p-2" /> */}
+          <select {...register('style')} className="w-full border p-2 rounded">
+            <option value="">Select Style</option>
+            <option value="Modern">Modern</option>
+            <option value="Classic">Classic</option>
+            <option value="Minimal">Minimal</option>
+          </select>
+
           <input {...register('location')} placeholder="Location" className="w-full border p-2" />
           <input type="number" {...register('budget')} placeholder="Budget" className="w-full border p-2" />
           <label className='font-bold text-xl'>Variations : </label>
