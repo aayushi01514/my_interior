@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { FloatingNav } from './FloatingNav';
+import FloatingNav from './FloatingNav';
 import { navItems } from '@/data';
 
 const NavWrapper = () => {
@@ -11,7 +11,7 @@ const NavWrapper = () => {
 
   if (isAdminRoute) return null;
 
-  return <FloatingNav navItems={navItems} />;
+  return <FloatingNav/>;
 };
 
 export default NavWrapper;
