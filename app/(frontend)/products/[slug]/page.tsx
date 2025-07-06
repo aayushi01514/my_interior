@@ -93,3 +93,36 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     },
   };
 }
+// import { notFound } from 'next/navigation';
+// import { Metadata } from 'next';
+// import connectDB from '@/lib/mongoose';
+// import DesignProject from '@/models/Product';
+// import CommonHeader from '@/app/components/CommonHeader';
+// import ProjectClient from './ProjectClient';
+
+// export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+//   await connectDB();
+//   const dbProject = await DesignProject.findOne({ slug: params.slug }).lean();
+//   if (!dbProject) return { title: 'Project Not Found' };
+
+//   return {
+//     title: dbProject.title,
+//     description: dbProject.description,
+//     openGraph: {
+//       images: [dbProject.frontimg],
+//     },
+//   };
+// }
+
+// export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
+//   await connectDB();
+//   const project = await DesignProject.findOne({ slug: params.slug }).lean();
+//   if (!project) return notFound();
+
+//   return (
+//     <>
+//       <CommonHeader title={project.title} imgsrc={project.frontimg} />
+//       <ProjectClient project={JSON.parse(JSON.stringify(project))} />
+//     </>
+//   );
+// }

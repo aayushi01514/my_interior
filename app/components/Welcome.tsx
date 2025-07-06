@@ -1,41 +1,69 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/Lamp";
-import logo from "../../public/8R PNG.png"
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
 export function LampDemo() {
     return (
-        <div className="w-full">
-            <LampContainer>
-                <motion.h1
-                    initial={{ opacity: 0.5, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                        delay: 0.3,
-                        duration: 0.8,
-                        ease: "easeInOut",
-                    }}
-                    className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-                >
-                    <span className="mt-32"> 8R <br /> STUDIO </span>
-                    {/* <TextGenerateEffect
-                        words="Transforming Concepts into Seamless User Experiences"
-                        className="text-center  text-white text-[40px] md:text-5xl lg:text-6xl"
-                    /> */}
+        <section className="w-full relative overflow-hidden">
+            {/* Mobile-specific hero */}
+            <div className="
+            block sm:hidden 
+            w-full max-h-[95vh] flex flex-col items-center justify-center text-center 
+            bg-gradient-to-br from-[#0b0f1c] via-[#1c1f2b] to-[#0b0f1c]">
+                <LampContainer>
+                    <motion.div
+                        initial={{ opacity: 0.5, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
+                        className="text-center max-w-full"
+                    >
+                        <h1 className="
+                    bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent 
+                    text-5xl md:text-6xl lg:text-7xl 
+                    font-bold tracking-tight mb-6 leading-tight"> 8R <br /> STUDIO </h1>
 
-                    <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hi! I&apos;m Ayushi, a Next.js Developer based in Croatia.
-                    </p> 
+                        <p className="
+              text-white/90 max-w-[95%] sm:max-w-xl mx-auto 
+              text-lg md:text-xl lg:text-2xl 
+              tracking-wide mb-8
+            ">
+                            Hi! I&apos;m Ayushi, a Next.js Developer based in Croatia.
+                        </p>
+                    </motion.div>
+                </LampContainer>
+            </div>
 
-                    {/* <Image
-                    src={logo}
-                    alt="abc"
-                    width={500}
-                    height={500}></Image> */}
-                </motion.h1>
-            </LampContainer>
-        </div>
+            {/* Original fullscreen hero (tablet & up) */}
+            <section className="hidden sm:block w-full h-screen flex items-center justify-center relative overflow-hidden">
+                <LampContainer>
+                    <motion.div
+                        initial={{ opacity: 0.5, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
+                        className="text-center max-w-full"
+                    >
+
+                        <h1 className="
+              bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent 
+              text-5xl md:text-6xl lg:text-7xl 
+              font-bold tracking-tight  leading-tight
+            ">
+                            <span className="text-black-500 ">8R</span><br /> STUDIO
+                        </h1>
+
+                        <p className="
+              text-white/90 max-w-[95%] sm:max-w-xl mx-auto 
+              text-lg md:text-xl lg:text-2xl 
+              tracking-wide mb-15
+            ">
+                            Hi! I&apos;m Ayushi, a Next.js Developer based in Croatia.
+                        </p>
+                    </motion.div>
+                </LampContainer>
+            </section>
+        </section>
     );
 }
