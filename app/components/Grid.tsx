@@ -44,58 +44,58 @@ export const products = [
   },
 
   {
-    title: "Algochurn",
-    link: "#",
+    title: "Living Room",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/02.webp",
   },
   {
-    title: "Aceternity UI",
-    link: "#",
+    title: "Modular Kitchen",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/0102.webp",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "#",
+    title: "Bedroom",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/0103.webp",
   },
   {
-    title: "SmartBridge",
-    link: "#",
+    title: "Office Space",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "/images/contactus/04.webp",
   },
   {
-    title: "Renderwork Studio",
-    link: "#",
+    title: "Renderwork",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "/images/contactus/01.webp",
   },
 
   {
     title: "Creme Digital",
-    link: "#",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/images/contactus/02.webp",
   },
   {
     title: "Golden Bells Academy",
-    link: "#",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "/images/contactus/03.webp",
   },
   {
     title: "Invoker Labs",
-    link: "#",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+      "/04.webp",
   },
   {
     title: "E Free Invoice",
-    link: "#",
+    link: "/products/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "/03.webp",
   },
 ];
