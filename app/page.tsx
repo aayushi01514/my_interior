@@ -17,17 +17,17 @@ export default function Home() {
   const router = useRouter();
   const [user, setUser] = useState<{ email: string } | null>(null);
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    } else {
-      toast.error("Please log in first");
-      router.push("/login/");
-    }
-  }, [router]);
+  // useEffect(() => {
+  //   const storedUser = localStorage.getItem("user");
+  //   if (storedUser) {
+  //     setUser(JSON.parse(storedUser));
+  //   } else {
+  //     toast.error("Please log in first");
+  //     router.push("/login/");
+  //   }
+  // }, [router]);
 
-  if (!user) return null;
+  // if (!user) return null;
   return (
     <>
       {/* <SidebarDemo  /> */}
