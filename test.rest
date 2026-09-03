@@ -3,11 +3,157 @@ GET http://localhost:3001/api/users
 Content-Type: application/json
 
 ### Create a new user
-POST http://localhost:3001/api/users
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-  "username": "john_doe",
-  "password": "securepass123",
-  "email": "john@example.com"
+  "name": "fdnvbhbv",
+  "email": "dfdhbvfhbvhf@example.com",
+  "address": "123 Main St, Cityville",
+  "mobileNo": "9876543210",
+  "message": "Interested in your services"
+}
+
+### Get All Projects
+GET http://localhost:3000/api/design-project
+
+### Create New Project
+POST http://localhost:3000/api/design-project
+Content-Type: application/json
+
+  {
+    "title": "Design",
+    "description": "A stylish modern living room design with plenty of natural light.",
+    "frontimg": "/01.jpg",
+    "frontimgalt": "Modern Living Room Design",
+    "images": ["image1.jpg", "image2.jpg", "image3.jpg"],
+    "style": "Modern",
+    "location": "New York",
+    "budget": 15000,
+    "variations": [
+        {
+            "image": "/01.jpg",
+            "price": 12000,
+            "buttonLabel": "View Details",
+            "buttonLink": "/projects/modern-living-room"
+        },
+        {
+            "image": "/02.jpg",
+            "price": 10000,
+            "buttonLabel": "Contact Us",
+            "buttonLink": "/contact"
+        }
+    ]
+}
+
+ 
+
+
+
+### Get Single Project by ID
+GET http://localhost:3000/api/design-project/67ffa19408eb19dfc0205c17
+
+### Update Project by ID
+PUT http://localhost:3000/api/design-project/67ffa19408eb19dfc0205c17
+Content-Type: application/json
+
+{
+  "title": "Updated Living Room",
+  "description": "Modern updated design.",
+  "images": ["/01.jpg", "/02.jpg"],
+  "style": "Contemporary",
+  "location": "Delhi",
+  "budget": 600000
+}
+
+### Delete Project by ID
+# DELETE http://localhost:3000/api/design-project/{{projectId}}
+
+### Update Design Project by ID
+PUT http://localhost:3000/api/design-project/67ffa19408eb19dfc0205c17
+Content-Type: application/json
+
+{
+  "title": "Updated Living Room Project",
+  "description": "Modern and elegant design with soft tones.",
+  "frontimg": "/01.jpg",
+  "frontimgalt": "Modern Living Room",
+  "style": "Modern",
+  "location": "Mumbai",
+  "budget": 2200000,
+  "slug": "updated-living-room-project",
+  "variations": [
+    {
+      "price": 150000,
+      "image": "/01.jpg",
+      "buttonLabel": "View More",
+      "buttonLink": "https://example.com/project/details/variation1"
+    },
+    {
+      "price": 180000,
+      "image": "/02.jpg",
+      "buttonLabel": "Explore Design",
+      "buttonLink": "https://example.com/project/details/variation2"
+    }
+  ]
+}
+
+
+### Update design project by ID
+PUT http://localhost:3000/api/design-project/67ffa19408eb19dfc0205c17
+Content-Type: application/json
+
+{
+  "title": "Modern Villa Interior - Updated",
+  "description": "Updated description for the sleek modern villa.",
+  "frontimg": "https://example.com/frontimg-new.jpg",
+  "frontimgalt": "Updated villa image",
+  "style": "Modern",
+  "location": "Delhi",
+  "budget": 3000000,
+  "variations": [
+    {
+      "image": "https://example.com/newvariation1.jpg",
+      "price": 120000,
+      "buttonLabel": "Reserve Now",
+      "buttonLink": "/book/updated-villa-1"
+    }
+  ]
+}
+
+
+### Create a new booking
+POST http://localhost:3000/api/book
+Content-Type: application/json
+
+{
+  "title": "Luxury Interior Package",
+  "name": "Amit Patel",
+  "email": "amit@example.com",
+  "phone": "9876543210",
+  "date": "2025-05-28",
+  "message": "I would like to discuss further about this design."
+}
+### Register New Admin
+POST http://localhost:3000/api/admin-reg
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "aayu@1234"
+}
+
+#####
+
+DELETE http://localhost:3000/api/tasks/6847d4b444371f2eab72476d
+Content-Type: application/json
+
+
+### Register user
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "TestPassword123"
 }
